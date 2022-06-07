@@ -1,0 +1,141 @@
+#body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+}
+
+.Card {
+  width: 250px;
+  height: 440px;
+  border-radius: 15px;
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 6px black solid;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.Card-content {
+  width: 240px;
+  height: 420px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0px 5px;
+}
+
+.Card-image figure {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+}
+.Card-image .pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 500ms ease-out;
+}
+
+.Card-image .capa {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background-color: hsl(178, 100%, 50%, 0.6);
+  border-radius: 10px;
+  transition: all 500ms ease-out;
+  visibility: hidden;
+  opacity: 0;
+  background-image: url(./images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.Card-image figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.Card-info {
+  width: 230px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  line-height: 8px;
+}
+
+.Stats {
+  width: 230px;
+  height: 70px;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: left;
+  padding-left: 3px;
+}
+
+.Stats h2 {
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.Stats p {
+  color: hsl(215, 51%, 70%);
+  font-size: 12px;
+}
+
+.Stats h2:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.5s;
+}
+
+.Card-price {
+  height: 40px;
+  font-size: 10px;
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.hr {
+  width: 220px;
+}
+
+.autor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.autor-pic {
+  width: 20px;
+  height: 20px;
+  border: hsl(215, 51%, 70%) solid 1px;
+  border-radius: 100px;
+}
+
+.autor p {
+  color: hsl(215, 51%, 70%);
+  font-size: 10px;
+  font-weight: lighter;
+}
+
+.autor strong:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@media .Card;
